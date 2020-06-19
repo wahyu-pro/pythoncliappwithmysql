@@ -48,7 +48,7 @@ class TODOCliApp:
 
     @cli.command("clear")
     def clear():
-        inp = input("Are you sure want to delete? [y/N] ")
+        inp = input("Are you sure want to delete? [\"y\"/\"N\"] ")
         res = inp.lower()
         if inp == "y":
             query_clear = "TRUNCATE TABLE todo"
